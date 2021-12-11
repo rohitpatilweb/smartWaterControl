@@ -1,11 +1,10 @@
 import React from "react";
 import FronPage from "./Components/FrontPage";
-import { Text, View } from "react-native";
+import { View } from "react-native";
 
 function App() {
   return (
     <View>
-      <Text> sdf</Text>
       <FronPage />
     </View>
   );
