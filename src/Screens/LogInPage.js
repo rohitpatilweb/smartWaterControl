@@ -54,47 +54,41 @@ function LoginPage() {
 
 const styles = StyleSheet.create({
   grad: {
-    paddingTop: "4%",
-    paddingBottom: "4%",
+    paddingTop: 10,
+    paddingBottom: 10,
     justifyContent: "space-between",
     width: "100%",
-    height: "31%",
+    height: 150,
     backgroundColor: "#1f7882",
-    // zIndex:100,
     borderRadius: 11
   },
   backgrad: {
-    //  zIndex:10,
     position: "absolute",
     elevation: 20,
-    paddingTop: "4%",
-    paddingBottom: "4%",
+    paddingTop: 10,
+    paddingBottom: 10,
     justifyContent: "space-between",
     width: "100%",
-    height: "35%",
+    height: 226,
     backgroundColor: "#1f7882"
-    //  borderRadius:10
   },
   input: {
     shadowColor: "#000000",
     shadowOffset: { width: 0, height: 3 },
     shadowOpacity: 0.29,
     shadowRadius: 9,
-    height: "27%",
+    height: 40,
     width: "90%",
-    marginBottom: "7%",
+    marginBottom: 15,
     marginLeft: "5%",
     borderWidth: 1,
-    padding: 10,
+    paddingLeft: 10,
+    paddingTop: 5,
+    paddingBottom: 5,
     borderRadius: 10,
     color: "black"
   },
-  imageBox: {
-    marginTop: "5%",
-    marginLeft: "45%",
-    height: "5%",
-    width: "10%"
-  },
+
   images: {
     height: 50,
     width: 50,
@@ -108,15 +102,12 @@ const styles = StyleSheet.create({
     },
     shadowOpacity: 0.46,
     shadowRadius: 11.14,
-    elevation: 90,
-    // justifyContent: "space-evenly",
-    flex: 1,
+    elevation: 20,
+    height: 480,
     textAlign: "center",
-    marginTop: "30%",
-    marginBottom: "30%",
-    marginLeft: "10%",
-    height: "auto",
-    width: "80%",
+    marginTop: "20%",
+    marginLeft: 30,
+    marginRight: 30,
     borderRadius: 20,
     backgroundColor: "#F9F7F7"
   },
@@ -130,7 +121,7 @@ const styles = StyleSheet.create({
     width: "100%"
   },
   Headerfont: {
-    marginBottom: "5%",
+    marginBottom: 10,
     alignSelf: "center",
     textShadowColor: "rgba(0, 0, 0, 0.6)",
     textShadowOffset: { width: 0, height: 3 },
@@ -157,13 +148,13 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.29,
     shadowRadius: 9,
     marginLeft: "25%",
-    marginTop: "2%",
+    marginTop: 5,
     elevation: 25,
-    height: "27%",
+    height: 40,
     width: "50%",
     backgroundColor: "#1f7882",
     borderColor: "#7fffd4",
-    padding: 15,
+    padding: 8,
     borderRadius: 15
   },
   buttonText: {
