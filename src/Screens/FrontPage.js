@@ -1,19 +1,16 @@
-import LogInPage from ".././Components/LogInPage";
-import SignUpPage from ".././Components/SignUpPage";
+import { useNavigation } from "@react-navigation/native";
 import {
   TouchableOpacity,
   ImageBackground,
   StyleSheet,
   Text,
-  View,
-  Navigator,
-  onPress
+  View
 } from "react-native";
-import FadeInView from "./fadein";
-const signInHandler = () => {};
-const logInHandler = () => {};
+import FadeInView from "../Components/fadein";
 
 function FrontPage() {
+  const navigation = useNavigation();
+
   return (
     <view>
       <ImageBackground
@@ -30,10 +27,16 @@ function FrontPage() {
             </View>
 
             <View style={styles.fixToText}>
-              <TouchableOpacity style={styles.button} onPress={logInHandler}>
+              <TouchableOpacity
+                style={styles.button}
+                onPress={() => navigation.navigate("LoginPage")}
+              >
                 <Text style={styles.buttonText}>L O G I N</Text>
               </TouchableOpacity>
-              <TouchableOpacity style={styles.button} onPress={signInHandler}>
+              <TouchableOpacity
+                style={styles.button}
+                onPress={() => navigation.navigate("SignUpPage")}
+              >
                 <Text style={styles.buttonText}>S I G N U P</Text>
               </TouchableOpacity>
             </View>
@@ -85,16 +88,16 @@ const styles = StyleSheet.create({
     shadowRadius: 9,
     marginLeft: "7%",
     marginBottom: "5%",
-    height: 45,
+    height: 49,
     width: "86%",
     backgroundColor: "#000000",
     borderColor: "#7fffd4",
     // borderWidth: ,
-    padding: 12,
+    padding: 13,
     borderRadius: 12
   },
   buttonText: {
-    color: "#90ee90",
+    color: "#20b2aa",
     fontSize: 15,
     alignSelf: "center"
   }
