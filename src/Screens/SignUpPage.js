@@ -44,7 +44,28 @@ function SignUpPage() {
               >
                 <Text style={styles.buttonText}>CREATE ACCOUNT</Text>
               </TouchableOpacity>
-              OR SIGN-UP WITH
+
+              <View style={{ flexDirection: "row", alignItems: "center" }}>
+                <View
+                  style={{ flex: 1, height: 1, backgroundColor: "black" }}
+                />
+                <View>
+                  <Text
+                    style={{
+                      width: 50,
+                      textAlign: "center",
+                      marginBotoom: "8%"
+                    }}
+                  >
+                    OR
+                  </Text>
+                </View>
+                <View
+                  style={{ flex: 1, height: 1, backgroundColor: "black" }}
+                />
+              </View>
+              <Text style={styles.font}>Sign Up With</Text>
+
               <View style={styles.auth}>
                 <TouchableOpacity
                   style={styles.authBtnBox}
@@ -53,10 +74,10 @@ function SignUpPage() {
                   <Image
                     onPress={() => navigation.navigate("LoginPage")}
                     source={require("../Assets/google.png")}
-                    style={styles.authButten}
+                    style={[styles.authButten, { alignSelf: "center" }]}
                   />
+                  <Text style={{ alignSelf: "center" }}>Google</Text>
                 </TouchableOpacity>
-
                 <TouchableOpacity
                   style={styles.authBtnBox}
                   onPress={() => navigation.navigate("LoginPage")}
@@ -64,8 +85,9 @@ function SignUpPage() {
                   <Image
                     onPress={() => navigation.navigate("LoginPage")}
                     source={require("../Assets/facebook.png")}
-                    style={styles.authButten}
+                    style={[styles.authButten, { alignSelf: "center" }]}
                   />
+                  <Text style={{ alignSelf: "center" }}>Facebook</Text>
                 </TouchableOpacity>
               </View>
             </View>
@@ -77,41 +99,34 @@ function SignUpPage() {
 }
 
 const styles = StyleSheet.create({
-  authBtnBox: {},
   authButten: {
-    height: 30,
-    width: 30
+    height: "5vh",
+    width: "5vh"
   },
   auth: {
-    flex: 3,
+    paddingLeft: "15%",
+    paddingRight: "15%",
     flexDirection: "row",
     justifyContent: "space-between",
-    paddingTop: "4%",
-    height: "5%",
-    width: "10%",
-    paddingLeft: "35%"
+    paddingTop: "7%",
+    height: "5%"
   },
   grad: {
     paddingTop: "4%",
     paddingBottom: "4%",
     justifyContent: "space-between",
     width: "100%",
-    height: "31%",
+    height: "25%",
     backgroundColor: "#1f7882",
-    // zIndex:100,
     borderRadius: 11
   },
   backgrad: {
-    //  zIndex:10,
     position: "absolute",
-    elevation: 20,
     paddingTop: "4%",
     paddingBottom: "4%",
-    justifyContent: "space-between",
     width: "100%",
-    height: "35%",
+    height: "23.6%",
     backgroundColor: "#1f7882"
-    //  borderRadius:10
   },
   input: {
     shadowColor: "#000000",
@@ -127,16 +142,12 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     color: "black"
   },
-  imageBox: {
-    marginTop: "5%",
-    marginLeft: "45%",
-    height: "5%",
-    width: "10%"
-  },
   images: {
-    height: 50,
-    width: 50,
-    alignSelf: "center"
+    height: "10vh",
+    width: "10vh",
+    alignSelf: "center",
+    marginTop: "4%",
+    marginBotoom: "3%"
   },
   box: {
     shadowColor: "#000",
@@ -147,13 +158,12 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.46,
     shadowRadius: 11.14,
     elevation: 90,
-    // justifyContent: "space-evenly",
     flex: 1,
     textAlign: "center",
     marginTop: "10%",
     marginBottom: "10%",
     marginLeft: "10%",
-    height: "auto",
+    height: "70%",
     width: "80%",
     borderRadius: 20,
     backgroundColor: "#F9F7F7"
