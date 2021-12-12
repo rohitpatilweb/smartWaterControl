@@ -2,7 +2,7 @@ import React from "react";
 import FrontPage from "./Screens/FrontPage";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-import LoginPage from "./Screens/LogInPage";
+import LogInPage from "./Screens/LogInPage";
 import SignUpPage from "./Screens/SignUpPage";
 
 const Stack = createStackNavigator();
@@ -12,10 +12,10 @@ function App() {
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen
           name="Home"
-          component={LoginPage}
+          component={SignUpPage}
           // options={{ title: 'Welcome' }}
         />
-        <Stack.Screen name="LoginPage" component={LoginPage} />
+        <Stack.Screen name="LoginPage" component={LogInPage} />
         <Stack.Screen name="SignUpPage" component={SignUpPage} />
       </Stack.Navigator>
     </NavigationContainer>
