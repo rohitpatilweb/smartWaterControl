@@ -12,7 +12,7 @@ function FrontPage() {
   const navigation = useNavigation();
 
   return (
-    <view>
+    <View>
       <ImageBackground
         source={require("../Assets/4.jpg")}
         resizeMode="cover"
@@ -43,7 +43,7 @@ function FrontPage() {
           </View>
         </FadeInView>
       </ImageBackground>
-    </view>
+    </View>
   );
 }
 
