@@ -12,7 +12,7 @@ function App() {
       <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen
           name="Home"
-          component={LogInPage}
+          component={FrontPage}
           // options={{ title: 'Welcome' }}
         />
         <Stack.Screen name="LoginPage" component={LogInPage} />
